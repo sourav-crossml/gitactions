@@ -16,4 +16,4 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
     steps:
-      - uses: actions/javascript-action@v1.0.1
+      - uses: actions/action@v1.0.1
