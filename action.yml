@@ -16,9 +16,3 @@ inputs:
     description: "Optional. Force push the tag. Defaults to 'false'."
     required: false
     default: "false"
-runs:
-  using: "docker"
-  image: "Dockerfile"
-branding:
-  icon: "tag"
-  color: "blue"
