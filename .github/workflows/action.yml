@@ -1,14 +1,12 @@
-name: git action tag
+name: Create/update tag
 on:
   push:
-    branches:
-      - main
-  
+    branch: "main"
 jobs:
-  build:
+  create-tag:
     runs-on: ubuntu-latest
     steps:
-      - name: version and push tag
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
-          tag: ${{ steps.date.outputs.date }}
+          tag: "latest"
+          message: "Latest release"
