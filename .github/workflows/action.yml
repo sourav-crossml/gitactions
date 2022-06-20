@@ -10,6 +10,5 @@ jobs:
       - name: version and push tag
         uses: actions/checkout@v2
         with:
-          tag: ${{ steps.tag_version.outputs.new_tag }}
-          name: Release ${{ steps.tag_version.outputs.new_tag }}
-          body: ${{ steps.tag_version.outputs.changelog }}
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
