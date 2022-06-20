@@ -3,12 +3,12 @@ on:
   push:
     branches:
       - main
+    tags:        
+      - v
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: version and push tag
         uses: actions/checkout@v2
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+       
