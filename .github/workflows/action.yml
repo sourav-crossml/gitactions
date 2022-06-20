@@ -1,13 +1,13 @@
-name: Create/update tag
-on:
-  push:
-    branch: "main"
+name: Test
+
+on: push
+
 jobs:
-  create-tag:
+  test:
+    name: Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: sourav-crossml/gitactions@v1
-        with:
-          tag: "latest"
-          message: "Latest release"
+
+    - name: Echo
+      run: |
+        echo Heyyyyy
