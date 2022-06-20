@@ -1,6 +1,6 @@
 name: "Create/Update tag"
 description: "Creates or updates a tag for a given commit."
-author: "Rick Staa"
+author: "Sourav Singh"
 inputs:
   
   tag:

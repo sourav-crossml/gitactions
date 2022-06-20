@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: sourav-crossml/gitactions@v
+      - uses: sourav-crossml/gitactions@v1
         with:
           tag: "latest"
           message: "Latest release"
