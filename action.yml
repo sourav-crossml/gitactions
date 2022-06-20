@@ -1,0 +1,24 @@
+name: "Create/Update tag"
+description: "Creates or updates a tag for a given commit."
+author: "Rick Staa"
+inputs:
+  
+  tag:
+    description: "Tag you want to create or update."
+    required: true
+  message:
+    description: "Tag message."
+    required: false
+  commit_sha:
+    description: The commit SHA hash on which you want to push the tag. Uses latest commit by default.
+    required: false
+  force_push_tag:
+    description: "Optional. Force push the tag. Defaults to 'false'."
+    required: false
+    default: "false"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "tag"
+  color: "blue"
