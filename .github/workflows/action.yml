@@ -11,5 +11,4 @@ jobs:
       - name: version and push tag
         uses: actions/checkout@v2
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ steps.date.outputs.date }}
